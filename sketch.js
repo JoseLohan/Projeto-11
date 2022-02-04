@@ -29,6 +29,11 @@ function draw() {
   background(0);
 
   Jaxon.x = World.mouseX
+  Road.velocity.y = +3
+
+  if(Road.y > 400 ){
+    Road.y = height/2;
+  }
 
   Road.depth = Jaxon.depth-1;
  
